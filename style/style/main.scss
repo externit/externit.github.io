@@ -1,0 +1,387 @@
+@import 'font.css';
+@import 'base/_base.scss';
+@import 'base/_mixins.scss';
+@import 'base/_variables.scss';
+@media (min-width:900px) and (max-width: 2000px) {
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .title {
+        @include text (Montserrat, normal, 700, 22px, 22px, center);
+    }
+    .subtitle-text {
+        @include text (Roboto, normal, 300, 18px, 14px, center);
+        margin-top: 43px;
+        color: rgba(102, 102, 102, 1);
+    }
+    .main-page {
+        width: 100%;
+        height: 700px;
+        background: url(./img/main-page/0dc63d9ccd142ecdbf799689440dc6be.png);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        &__nav-bar {
+            width: 900px;
+            height: 36px;
+            margin: 0 auto;
+            margin-top: 46px;
+            display: flex;
+            justify-content: space-between
+        }
+        &__logo {
+            @include text(Montserrat, normal, 700, 20px, 36px, left);
+            color: white;
+        }
+        &__connect {
+            width: 153px;
+            height: 36px;
+            display: flex;
+            text-align: center;
+            line-height: 36px;
+            color: white;
+        }
+        &__btn-log {
+            width: 40%;
+            height: 100%;
+            @include text(Montserrat, normal, 300, 14px, 36px, left);
+        }
+        &__btn-sign {
+            width: 60%;
+            height: 100%;
+            border: 2px solid white;
+            border-radius: 40px;
+            @include text (Montserrat, normal, 300, 14px, 32px, center);
+        }
+        &__container {
+            width: 470px;
+            height: 234px;
+            margin: 0 auto;
+            margin-top: 153px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__title {
+            display: none
+        }
+        &__subtitle {
+            @include text(Montserrat, normal, 700, 52px, 63px, center);
+        }
+        &__text {
+            @include text (Roboto, normal, 300, 24px, 24px, center);
+            color: rgba(247, 243, 242, 1);
+        }
+        &__btn-cont {
+            width: 225px;
+            height: 40px;
+            margin: 0 auto;
+            background-color: rgba(255, 78, 80, 1);
+            border-radius: 40px;
+            @include text(Montserrat, normal, 700, 14px, 40px, center);
+        }
+    }
+    .steps {
+        width: 940px;
+        height: 461px;
+        margin: 0 auto;
+        margin-top: 95px;
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__step-1 {
+            width: 300px;
+            height: 400px;
+            margin-top: 35px;
+            background-image: url(./img/steps/step-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            overflow: hidden;
+            color: white;
+        }
+        &__btn {
+            width: 70px;
+            height: 20px;
+            border-radius: 40px;
+            background-color: rgba(255, 78, 80, 1);
+            margin: 205px 0 20px 20px;
+            @include text(Montserrat, normal, 400, 10px, 20px, center);
+        }
+        &__title {
+            margin: 38px 0 0 20px;
+            @include text(Montserrat, normal, 700, 24px, 14px, left);
+        }
+        &__subtitle {
+            width: 195px;
+            margin: 25px 0 0 20px;
+            color: rgba(227, 227, 227, 1);
+            @include text(Roboto, normal, 300, 14px, 14px, left);
+        }
+        &__step-2 {
+            width: 300px;
+            height: 400px;
+            margin-top: 35px;
+            overflow: hidden;
+            background-image: url(./img/steps/step-2.png);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 4px;
+        }
+        &__step-3 {
+            width: 300px;
+            height: 400px;
+            margin-top: 35px;
+            overflow: hidden;
+            background-image: url(./img/steps/step-3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            color: white;
+        }
+    }
+    .partners {
+        margin: 0 auto;
+        width: 940px;
+        height: 360px;
+        margin-top: 95px;
+        &__flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__partner-1 {
+            width: 220px;
+            height: 205px;
+            margin: 35px 19px 0px 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__photo {
+            display: flex;
+            justify-content: center;
+        }
+        &__name {
+            @include text(Montserrat, normal, 700, 14px, 17px, center);
+        }
+        &__text {
+            @include text(Roboto, normal, 300, 14px, 14px, center);
+            color: rgba(102, 102, 102, 1);
+        }
+        &__partner-2 {
+            width: 220px;
+            height: 205px;
+            margin: 35px 19px 0px 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__partner-3 {
+            width: 220px;
+            height: 205px;
+            margin: 35px 19px 0px 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__partner-4 {
+            width: 220px;
+            height: 205px;
+            margin: 35px 0px 0px 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__btn {
+            width: 280px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 55px;
+            border: 2px solid rgba(255, 78, 80, 1);
+            border-radius: 40px;
+            @include text(Montserrat, normal, 700, 14px, 36px, center);
+            color: rgba(255, 78, 80, 1);
+        }
+    }
+    .activities {
+        width: 940px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 95px;
+        &__flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__text {
+            width: 206px;
+            height: 54px;
+            margin: 0 auto;
+            @include text(Montserrat, normal, 700, 22px, 25px, center);
+            align-items: center;
+            color: white;
+        }
+        &__box-1 {
+            width: 300px;
+            height: 310px;
+            margin: 35px 20px 0 0;
+            background-image: url(./img/actv/1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            overflow: hidden;
+            @include actv-flex (flex, center, center);
+        }
+        &__box-2 {
+            width: 300px;
+            height: 310px;
+            margin: 35px 20px 0 0;
+            background-image: url(./img/actv/2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            overflow: hidden;
+            @include actv-flex (flex, center, center);
+        }
+        &__box-3 {
+            width: 300px;
+            height: 310px;
+            margin: 35px 0px 0 0;
+            background-image: url(./img/actv/3.png);
+            background-size: cover;
+            background-position: right;
+            border-radius: 4px;
+            overflow: hidden;
+            @include actv-flex (flex, center, center);
+        }
+        &__box-4 {
+            width: 300px;
+            height: 310px;
+            margin: 20px 20px 0 0;
+            background-image: url(./img/actv/4.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            overflow: hidden;
+            line-height: 60px;
+            @include actv-flex (flex, center, center);
+        }
+        &__box-5 {
+            width: 620px;
+            height: 310px;
+            margin: 20px 0 0 0;
+            background-image: url(./img/actv/5.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            line-height: 25px;
+            overflow: hidden;
+            @include actv-flex (flex, center, center);
+        }
+        &__box-6 {
+            width: 620px;
+            height: 310px;
+            margin: 20px 0 0 0;
+            background-image: url(./img/actv/6.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            overflow: hidden;
+            @include actv-flex (flex, center, center);
+        }
+        &__box-7 {
+            width: 300px;
+            height: 310px;
+            margin: 20px 0 95px 20px;
+            background-image: url(./img/actv/7.jpg);
+            background-size: cover;
+            background-position: top;
+            border-radius: 4px;
+            overflow: hidden;
+            line-height: 60px;
+            @include actv-flex (flex, center, center);
+        }
+        &__flex-2 {
+            display: flex;
+            justify-content: center;
+        }
+        &__form {
+            input[type=text] {
+                width: 299px;
+                height: 40px;
+                padding: 12px 20px;
+                margin: 25px 10px 10px 0;
+                border: 1px solid #D4D4D4;
+                box-sizing: border-box;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                border-radius: 3px;
+            }
+             ::placeholder {
+                color: rgba(153, 153, 153, 1);
+                @include text(Roboto, normal, 300, 14px, 16px, left);
+            }
+        }
+        &__btn {
+            width: 172px;
+            height: 40px;
+            margin-top: 25px;
+            background-color: rgba(255, 78, 80, 1);
+            border-radius: 40px;
+            @include text(Montserrat, normal, 700, 14px, 40px, center);
+            color: white;
+        }
+    }
+    .footer {
+        width: 1440px;
+        height: 224px;
+        margin-top: 100px;
+        border-top: 2px solid rgba(255, 78, 80, 1);
+        &__flex {
+            width: 940px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap
+        }
+        &__info {
+            margin-top: 40px;
+            margin-left: 160px;
+        }
+        &__title {
+            @include text(Montserrat, normal, 400, 16px, 20px, center);
+            color: rgba(255, 78, 80, 1);
+            margin: 36px 108px 0 39px;
+        }
+        &__link {
+            width: 60px;
+            @include text(Roboto, normal, 300, 14px, 26px, left);
+            color: rgba(153, 153, 153, 1);
+            margin: 0 0 0 266px;
+            order: 1;
+        }
+        &__subtitle {
+            margin: 40px 100px 0 0;
+            @include text(Montserrat, normal, 700, 14px, 17px, center)
+        }
+        &__subsubtitle {
+            margin: 0 auto 7px auto;
+            @include text(Montserrat, normal, 700, 10px, 12px, center);
+            color: rgba(204, 204, 204, 1);
+        }
+        &__logo {
+            width: 110px;
+            height: 24px;
+            background-image: url(./img/footer.png);
+            background-size: cover;
+            margin: 0 auto;
+        }
+    }
+}
